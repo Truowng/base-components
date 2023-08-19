@@ -1,0 +1,15 @@
+body {
+  font-family: $font-family;
+}
+
+.reverse-row {
+  @include tablet {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1160px;
+  }
+}

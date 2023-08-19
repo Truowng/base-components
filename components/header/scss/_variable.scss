@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto&display=swap");
+
+$font-family: "Poppins", sans-serif;
+$font-extralight: 200;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+$bg-color-header: #000;
+$text-color: #fff;
+$hover-color-link: #ffe502;
+$highlight-span: #ffe502;
+
+@mixin large-desktop {
+  @media only screen and (max-width: 1399px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin landscape-phone {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
